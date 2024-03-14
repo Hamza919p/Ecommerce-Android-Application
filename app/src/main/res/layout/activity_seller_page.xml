@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="SELLER "
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wave"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="horizontal"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl1" />
+
+    <ImageView
+        android:id="@+id/pimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_wave"
+        app:layout_constraintStart_toEndOf="@id/imageh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/imageh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:padding="8dp"
+        android:hint="Product Image: "
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/ll_wave"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/blue"
+        />
+
+    <Button
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Browse"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="@id/imageh"
+        app:layout_constraintTop_toBottomOf="@id/imageh"
+        app:layout_constraintStart_toStartOf="@id/imageh"
+        />
+
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textStyle="bold"
+android:layout_margin="20dp"
+android:id="@+id/pname"
+android:padding="8dp"
+android:hint="Product Name"
+android:textColor="@color/blue"
+app:layout_constraintTop_toBottomOf="@id/pimage"
+android:layout_marginTop="40dp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:textColorHint="@color/blue"
+    />
+
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textStyle="bold"
+android:layout_margin="20dp"
+android:id="@+id/pdiscount"
+android:padding="8dp"
+android:hint="Discount"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/pprice"
+android:textColorHint="@color/blue"
+android:textColor="@color/blue"
+    />
+
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textStyle="bold"
+android:layout_margin="20dp"
+android:padding="8dp"
+android:id="@+id/pprice"
+android:hint="Product Cost"
+app:layout_constraintTop_toBottomOf="@id/pname"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:textColorHint="@color/blue"
+android:textColor="@color/blue"
+    />
+
+<EditText
+android:id="@+id/pdescription"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="20dp"
+android:textStyle="bold"
+android:layout_margin="20dp"
+android:hint="Product Description"
+android:padding="8dp"
+app:layout_constraintTop_toBottomOf="@id/pdiscount"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+android:textColorHint="@color/blue"
+android:textColor="@color/blue"
+    />
+
+    <EditText
+        android:id="@+id/pcontents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:hint="Box Contents"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pdescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/blue"
+        android:textColor="@color/blue"
+        />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="Lets Sell..!!"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pcontents"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

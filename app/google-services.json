@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "137296525297",
+    "project_id": "loginpage-app-eda3f",
+    "storage_bucket": "loginpage-app-eda3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137296525297:android:87a29ff19d48c75c86f650",
+        "android_client_info": {
+          "package_name": "com.example.login_page"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_A8xriuEfNU1cQuORKersQsuC34-xzAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

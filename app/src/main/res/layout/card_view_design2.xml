@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/title_imagec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pnamec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="This is first product"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/title_imagec"
+        app:layout_constraintTop_toTopOf="@id/title_imagec" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pdescriptionc"
+        android:textColor="@color/blue"
+        android:layout_marginStart="20dp"
+        android:text="This is its description"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/title_imagec"
+        app:layout_constraintTop_toBottomOf="@id/pnamec"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pdiscountc"
+        android:textColor="@color/red"
+        android:layout_marginStart="20dp"
+        android:text="50"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/title_imagec"
+        app:layout_constraintTop_toBottomOf="@id/pdescriptionc"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/symbolc"
+        android:textColor="@color/red"
+        android:text="%off"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/pdiscountc"
+        app:layout_constraintTop_toBottomOf="@id/pdescriptionc"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/symc"
+        android:textColor="@color/blue"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="M.R.P $ "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/symbolc"
+        app:layout_constraintTop_toBottomOf="@id/pdescriptionc"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ppricec"
+        android:textColor="@color/blue"
+        android:text="30"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/symc"
+        app:layout_constraintTop_toBottomOf="@id/pdescriptionc"
+        />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_imagec"
+        android:background="@color/grey"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
