@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.login_page"
-        minSdk = 33
+        minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -47,18 +47,27 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.google.firebase:firebase-database:20.3.0")
-    implementation("com.google.firebase:firebase-auth:22.3.0")
-    implementation("com.google.firebase:firebase-storage:20.3.0")
+
+    //firebase
+    implementation("com.google.firebase:firebase-database:${rootProject.extra.get("firebaseDatabaseVersion") as String}")
+    implementation("com.google.firebase:firebase-auth:${rootProject.extra.get("firebaseAuthVersion") as String}")
+    implementation("com.google.firebase:firebase-storage:${rootProject.extra.get("firebaseDatabaseVersion") as String}")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
     implementation("com.android.car.ui:car-ui-lib:2.5.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
-    implementation("com.google.firebase:firebase-analytics")
-    implementation ("androidx.recyclerview:recyclerview:1.2.0")
+
+    //Material
+    implementation ("androidx.recyclerview:recyclerview:${rootProject.extra.get("recyclerViewVersion") as String}")
     implementation ("androidx.cardview:cardview:1.0.0")
+
+    //Images
     implementation ("com.github.bumptech.glide:glide:4.11.0")
     implementation ("com.squareup.picasso:picasso:2.5.2")
+
+    //RazorPay
     implementation ("com.razorpay:checkout:1.6.33")
 }
